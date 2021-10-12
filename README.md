@@ -11,4 +11,6 @@ The old version used many many many calls to strjoin and therefore allocated and
 The new and improved version does at most 1 allocation (necessary as per the project's guidelines, the returned line must be allocated) and 2 copies (altough if it wasn't for the restrictions on line count, the minimum would be 1 copy).
 per iterations.
 
+*I challenge any and all who would dare defy the superiority of this get_next_line.*
 
+**Race me, I dare you**
