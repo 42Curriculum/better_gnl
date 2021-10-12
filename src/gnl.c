@@ -54,10 +54,10 @@ int		season1_part1(int *total, int *i, gnl_buff *file, char **line)
 		if ((file->_start = search(file->buffers[*i] + file->start, file->start,\
 		BUFF_SIZE - file->start, total)))
 		{
-				*line = malloc(*total + 1);
-				ft_memcpy(*line, &file->buffers[0][file->start], *total);
-				file->start = file->_start;
-				return file->_start != -1;
+			*line = malloc(*total + 1);
+			ft_memcpy(*line, &file->buffers[0][file->start], *total);
+			file->start = file->_start;
+			return file->_start != -1;
 		}
 		else if (++*i && *i >= file->bufferMax)
 			grow_buffers(file);
