@@ -68,9 +68,9 @@ int		season1_part1(int *total, int *i, gnl_buff *file, char **line)
 int		get_next_line(const int fd, char **line)
 {
 	static gnl_buff file[FD_MAX];
-	int 	b;
-	int 	i;
-	int		total;
+	int				b;
+	int				i;
+	int				total;
 
 	if (fd < 0 || fd > FD_MAX || line == NULL)
 		return -1;
